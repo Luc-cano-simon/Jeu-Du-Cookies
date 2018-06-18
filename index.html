@@ -10,15 +10,24 @@
 </head>
 <body>
 
-
+	<button type="button" name="button" class=Monbouton id="bouton"> Cliquez ici </button>
+	<span type="text" name="texte" id="compteur"></span>
+	<button type="button" name="button" id="multiply"> multiplicateur </button>
+	<span type="text" name="texte" id="compteur1"></span>
 
 
 <script>
 
 
-// Texte en Jquery
+var a = 0;
 
+  	$("#bouton").click(function() 
+  	{
+    a++;
+    $("#compteur").html(a);
+  	});
 
+  
 </script>
 
 </body>
