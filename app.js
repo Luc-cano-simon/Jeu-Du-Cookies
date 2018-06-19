@@ -32,10 +32,10 @@ $("#multiply").click(function()
 
 	$("#Autoclicker").click(function()
 {
-	if(i >= 200)
+	if(i >= 500)
 	{
 
-		i = i -200;
+		i = i -500;
 
 	
 	$("Score").html(i);
