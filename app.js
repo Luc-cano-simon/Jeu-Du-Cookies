@@ -1,5 +1,6 @@
 var i = 0;
 var multi = 1;
+var price = 50;
 
 
 $("#button").click(function()
@@ -12,17 +13,18 @@ $("#button").click(function()
 $("#multiply").click(function()
 {
 	
-	if(i >= 50){
+	if(i >= price){
 		multi = multi + 1;
-		i = i - 50;
+		i = i - price;
+		price=price *2;
 
-		
-
+		$("#multiply").html("multiplicateur " + multi + " prix" +price);
 	}else{
 		alert("point insuffisant")
 	}
 	
-	$("#Score").html(i); 
+	$("#Score").html(i);
+
 
 }
 
