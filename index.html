@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	 <meta charset="utf-8">
-  	<script src="jquery-2.2.4.js"></script>
-  	<link rel="stylesheet" href="style.css" />
-	
-	<title> Cookies </title>
+	<head>
+		<title> Cookie </title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<button id="button">clique ici</button>
+		<button id="multiply">Multiplicateur </button>
+		<br>
+		
 
-</head>
-<body>
+		<span> Score : </span>
+		
 
-	<button type="button" name="button" class=Monbouton id="bouton"> Cliquez ici </button>
-	<span type="text" name="texte" id="compteur"></span>
-	<button type="button" name="button" id="multiply"> multiplicateur </button>
-	<span type="text" name="texte" id="compteur1"></span>
-
-
-<script>
+		<div id="Score">0</div>
+			
 
 
-var a = 0;
 
-  	$("#bouton").click(function() 
-  	{
-    a++;
-    $("#compteur").html(a);
-  	});
-
-  
-</script>
-
-</body>
+		<script src="jquery-2.2.4.js"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
