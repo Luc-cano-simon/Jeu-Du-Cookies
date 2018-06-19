@@ -53,5 +53,25 @@ $("#multiply").click(function()
 	}
 });
 
+	$("#Bonus").click(function()
+{	
 
+		if (i >= 5000)
+		{
+			i = i -5000;
+	
+
+	$("#Score").html(i);
+
+		
+
+
+		}else{
+
+			alert("Et hop là tu as pas assez de crédit !!! ")
+		}
+
+});
+
+	
 
