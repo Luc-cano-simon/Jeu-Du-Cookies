@@ -18,7 +18,7 @@ $("#multiply").click(function()
 		i = i - price;
 		price=price *2;
 
-		$("#multiply").html("multiplicateur " + multi + " prix" +price);
+		$("#multiply").html("multiplicateur " + multi + "  prochain prix " +price);
 	}else{
 		alert("point insuffisant")
 	}
