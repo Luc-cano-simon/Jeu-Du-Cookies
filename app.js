@@ -4,11 +4,11 @@ var price = 50;
 
 
 $("#button").click(function()
-{
+	{
 
 	i = i+1*multi; 
 	$("#Score").html(i); 
-});
+	});
 
 $("#multiply").click(function()
 {
@@ -28,5 +28,30 @@ $("#multiply").click(function()
 
 }
 
-
 )
+
+	$("#Autoclicker").click(function()
+{
+	if(i >= 200)
+	{
+
+		i = i -200;
+
+	
+	$("Score").html(i);
+
+	setInterval(function()
+
+		{
+        i = i+1*multi; 
+		$("#Score").html(i);
+        }, 1000);
+	
+	}else{
+
+		alert("Il te faut plus de crédit ")
+	}
+});
+
+
+
