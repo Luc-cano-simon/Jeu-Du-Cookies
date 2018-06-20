@@ -1,7 +1,7 @@
 var i = 0;
 var multi = 1;
 var price = 50;
-
+var bonus2 = 200;
 
 $("#button").click(function()
 	{
@@ -53,25 +53,28 @@ $("#multiply").click(function()
 	}
 });
 
-	$("#Bonus").click(function()
-{	
 
-		if (i >= 5000)
-		{
-			i = i -5000;
-	
-
-	$("#Score").html(i);
-
-		
-
-
-		}else{
-
-			alert("Et hop là tu as pas assez de crédit !!! ")
-		}
+$("#Bonus").click(function()
+{
+	if(i >= -5000)
+	{
+	 i = i -5000;
+	 $("#bouton").click(function(){
+	  i = i + bonus2;
+	 $("#Score").html(score);
+	 })
+	setTimeout(function()
+	{
+		Bonus = 0
+		$("#Bonus").prop("disabled", true);
+		$("#Score").html(i);
+	 	}, 30000);
+}
+else
+{
+	alert("Il te faut 5000 credits !"); 	
+}
 
 });
 
-	
 
